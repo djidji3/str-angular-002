@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row col-12">
+    <h1>
+      {{title}}
+    </h1>
+  </div>
+  
+  <div class="row">
+    <div class="col-12 mt-5">
+      <button (click)="onSwitchDisabled()" class="btn btn-secondary"><i class="fa fa-trash"></i></button>
+      <button (click)="onSwitchVisabled()" class="btn btn-secondary"><i class="fa fa-trash"></i></button>
+      <div class="btn-group">
+        <button [disabled]="btnDisabled" class="btn btn-primary"><i class="fa fa-refresh"></i></button>
+        <button [disabled]="btnDisabled" class="btn btn-warning"><i class="fa fa-check"></i></button>
+        <button [disabled]="btnDisabled" class="btn btn-success"><i class="fa fa-user"></i></button>
+        <button [disabled]="btnDisabled" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+        <button [hidden]="btnVisabled" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+       
+      </div>
+    </div>
+  </div>
+</div>
