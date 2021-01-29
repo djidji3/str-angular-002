@@ -3,24 +3,29 @@
 <div *ngFor="let product of products">
 
     <h3>
-        <a [title]="product.name">
+        <a [title]="product.salePrice">
       {{ product.name }}
     </a>
     </h3>
 
     <p *ngIf="product.description">
-        Description: {{ product.description }}
+        Termék leírás: {{ product.description }}
+    </p>
+
+    <p *ngIf="product.salePrice !=0">
+        Akciós ár: {{ product.salePrice }}
+    </p>
+
+    <p *ngIf="product.featured == true">
+        Kiemelt termék
     </p>
 
 </div>
 
-<p>home works!</p>
 <p>
-
     - Jelenjen meg egy kiemelt termék sor az oldal tetején. (talan jumbotron)
 </p>
 <p>
-
     > 5 kiemelt terméket (featured = true termekekre vonatkozik) tartalmazzon, azok közül jelenjenek meg, amelyek featured tulajdonsága true.
 </p>
 <p>
