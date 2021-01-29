@@ -1,4 +1,6 @@
-<h2>Táplálék kiegészítők</h2>
+<h2 class="m-5">Táplálék kiegészítők</h2>
+
+
 
 <div *ngFor="let product of products">
 
@@ -19,6 +21,9 @@
     <p *ngIf="product.featured == true">
         Kiemelt termék
     </p>
+
+    <button class="btn btn-primary mb-5 mr-3" (click)="basket()">Részletek</button>
+    <button class="btn btn-success mb-5" (click)="termekismerteto()">Kosárba</button>
 
 </div>
 
